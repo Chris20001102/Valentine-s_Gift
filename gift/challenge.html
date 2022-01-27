@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Света's Challenge</title>
+</head>
+<style type="text/css">
+	
+        body {
+            background-image: url(https://pic.pimg.tw/rainsru/1628651540-2484802463-g.gif);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Open Sans', sans-serif;
+        }
+        img{
+        	border: 5px solid #FFAF60;
+        	margin: 2px;
+        }
+	.arrange{
+	display: flex;
+    justify-content: center; 
+    align-items: center; 
+    }
+    .datetext{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    }
+    .size{
+    display: flex;
+
+    width:150px;
+    height:20px;
+    margin: 2.5%;
+    }
+    .bn{
+    	width:80px;
+    	height:30px;
+    }
+    .bn:hover {
+    /* :hover 代表滑鼠移到元素上時的狀態 */ 
+    transform: scale(1.05);
+  }
+
+  .bn:active {
+    /* :active是滑鼠點擊元素的狀態 */
+    transform: scale(1);
+    box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
+  }
+  .bn {
+    transition: .1s;
+  }
+    .pic img{
+    	transform:scale(1,1);transition: all 1s ease-out;
+    }
+    .pic img:hover{
+    	transform:scale(1.2,1.2);
+    }
+    input[type=text] {
+    /* 通過border設定邊框樣式 */
+    border:3px solid gray;
+    border-radius: 8px;
+}
+</style>
+<script type="text/javascript">
+  function ansCheck() {
+  const ans1 = document.getElementById("a1");
+  const answer1 = ans1.value;
+  const ans2 = document.getElementById("a2");
+  const answer2 = ans2.value;
+  const ans3 = document.getElementById("a3");
+  const answer3 = ans3.value;
+  const ans4 = document.getElementById("a4");
+  const answer4 = ans4.value;
+  const ans5 = document.getElementById("a5");
+  const answer5 = ans5.value;
+  const ans6 = document.getElementById("a6");
+  const answer6 = ans6.value;
+  const ans7 = document.getElementById("a7");
+  const answer7 = ans7.value;
+  const ans8 = document.getElementById("a8");
+  const answer8 = ans8.value;
+  const ans9 = document.getElementById("a9");
+  const answer9 = ans9.value;
+  const ans10 = document.getElementById("a10");
+  const answer10 = ans10.value;
+  if (answer1=="20201210" && answer2=="20201231" && answer3=="20210113" && answer4=="20210314" && answer5=="20210320" 
+  	&& answer6=="20210329" && answer7=="20210923" && answer8=="20211102" && answer9=="20211211" && answer10=="20211225") {
+    window.location.href = "ending.html";
+  }else{
+  	alert("妳居然不記得...");
+  	if (answer1!="20201210") {
+  		alert("Picture 1 is incorrect")
+  	}if (answer2!="20201231") {
+  		alert("Picture 2 is incorrect")
+  	} if (answer3!="20210113") {
+  		alert("Picture 3 is incorrect")
+  	} if (answer4!="20210314") {
+  		alert("Picture 4 is incorrect")
+  	} if (answer5!="20210320") {
+  		alert("Picture 5 is incorrect")
+  	} if (answer6!="20210329") {
+  		alert("Picture 6 is incorrect")
+  	} if (answer7!="20210923") {
+  		alert("Picture 7 is incorrect")
+  	} if (answer8!="20211102") {
+  		alert("Picture 8 is incorrect")
+  	} if (answer9!="20211211") {
+  		alert("Picture 9 is incorrect")
+  	} if (answer10!="20211225") {
+  		alert("Picture 10 is incorrect")
+  	} 		
+  }
+}
+</script>
+
+<body>
+	<form id="form1" name="form1" >
+	<div align="center">
+	<h1><p>Света's Challenge</p></h1>
+	<h4><p>請將下列照片的日期填入答案</p></h4>
+	<h4><p>Ex. 20001102</p></h4>
+</div>
+<div class="arrange">
+	<p class="pic">
+		<img src="C:\Users\Chris\Desktop\gift\meet.jpg" alt="p" width="200px" height="200px" >
+		<img src="C:\Users\Chris\Desktop\gift\countdown.jpg" alt="p" width="200px" height="200px" >
+		<img src="C:\Users\Chris\Desktop\gift\go_out.jpg" alt="p" width="200px" height="200px" >
+		<img src="C:\Users\Chris\Desktop\gift\lock.jpg" alt="p" width="200px" height="200px" >
+		<img src="C:\Users\Chris\Desktop\gift\uba.jpg" alt="p" width="200px" height="200px" >
+	</p>
+	</div>
+	<div class="datetext">
+	<tr>
+	    <td><input type="text" id="a1" class="size"></td>
+		<td><input type="text" id="a2" class="size"></td>
+		<td><input type="text" id="a3" class="size"></td>
+		<td><input type="text" id="a4" class="size"></td>
+		<td><input type="text" id="a5" class="size"></td>
+	</tr>
+	</div>
+	<div class="arrange">
+	<p class="pic">
+		<img src="C:\Users\Chris\Desktop\gift\star.png" alt="p" width="200px" height="200px" >
+		<img src="C:\Users\Chris\Desktop\gift\nightview.jpg" alt="p" width="200px" height="200px" >
+		<img src="C:\Users\Chris\Desktop\gift\birth_day.jpg" alt="p" width="200px" height="200px" >
+		<img src="C:\Users\Chris\Desktop\gift\hiking.png" alt="p" width="200px" height="200px" >	
+		<img src="C:\Users\Chris\Desktop\gift\merry.jpg" alt="p" width="200px" height="200px" >
+	</p>
+	</div>
+	<div class="datetext">
+	<tr>
+	    <td><input type="text" id="a6" class="size"></td>
+		<td><input type="text" id="a7" class="size"></td>
+		<td><input type="text" id="a8" class="size"></td>
+		<td><input type="text" id="a9" class="size"></td>
+		<td><input type="text" id="a10" class="size"></td>
+	</tr>
+	</div>
+	<p></p>
+	<div align="center">
+	<input type="button" value="確定" class="bn" onclick="ansCheck();" >
+    </div>
+</form>
+</body>
+</html>
